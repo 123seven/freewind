@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-
+import Image from "next/image";
 import { useModal } from "./providers";
 
 import {
@@ -33,7 +33,11 @@ export function ContactModal() {
             </DialogDescription>
           </DialogHeader>
           <div className="grid gap-4 py-4">
-            <img src="/_static/images/wechat.png" alt="" className="mx-auto" />
+            <Image
+              src="/_static/images/wechat.png"
+              alt=""
+              className="mx-auto"
+            />
           </div>
           <DialogFooter>
             <Button type="submit" onClick={closeModal}>

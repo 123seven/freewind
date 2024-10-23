@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { useModal } from "@/components/modals/providers";
 import {
   Card,
@@ -97,10 +97,10 @@ export default function Example() {
             </CardHeader>
             <CardContent className="p-3 pt-0">
               <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg  xl:aspect-h-8 xl:aspect-w-7 shadow-xl hover:bg-gray-200">
-                <img
+                <Image
                   alt={product.imageAlt}
                   src={product.imageSrc}
-                  className="object-cover object-center group-hover:opacity-75 "
+                  className="object-cover object-center group-hover:opacity-75"
                 />
               </div>
             </CardContent>

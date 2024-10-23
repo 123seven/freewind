@@ -11,7 +11,6 @@ import {
   File,
   FileText,
   FingerprintIcon,
-  Flame,
   Globe,
   GlobeLock,
   HelpCircle,
