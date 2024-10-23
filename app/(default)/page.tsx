@@ -1,13 +1,13 @@
-"use client";
-import Image from "next/image";
-import { useModal } from "@/components/modals/providers";
+"use client"
+import Image from "next/image"
+import { useModal } from "@/components/modals/providers"
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} from "@/components/ui/card"
 
 const products = [
   {
@@ -46,7 +46,7 @@ const products = [
     id: 5,
     name: "京东京造露营车",
     href: "#",
-    price: "30¥/天",
+    price: "15¥/天",
     imageSrc: "/_static/images/5.jpg",
     imageAlt: "京东京造露营车",
   },
@@ -54,7 +54,7 @@ const products = [
     id: 6,
     name: "1.2米卷蛋桌",
     href: "#",
-    price: "15¥/天",
+    price: "10¥/天",
     imageSrc: "/_static/images/6.jpg",
     imageAlt: "1.2米卷蛋桌",
   },
@@ -75,12 +75,12 @@ const products = [
     imageAlt: "骆驼黑胶天幕",
   },
   // More products...
-];
+]
 
-<div className=""></div>;
+;<div className=""></div>
 
 export default function Example() {
-  const { openModal } = useModal();
+  const { openModal } = useModal()
 
   return (
     <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
@@ -96,8 +96,10 @@ export default function Example() {
               </CardDescription>
             </CardHeader>
             <CardContent className="p-3 pt-0">
-              <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg  xl:aspect-h-8 xl:aspect-w-7 shadow-xl hover:bg-gray-200">
+              <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg  xl:aspect-h-8 xl:aspect-w-7 shadow-xl hover:bg-gray-200 flex items-center justify-center">
                 <Image
+                  width={280}
+                  height={280}
                   alt={product.imageAlt}
                   src={product.imageSrc}
                   className="object-cover object-center group-hover:opacity-75"
@@ -108,5 +110,5 @@ export default function Example() {
         ))}
       </div>
     </div>
-  );
+  )
 }

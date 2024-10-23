@@ -20,12 +20,11 @@ export function ContactModal() {
   if (!isModalOpen) return null;
 
   return (
-    <div className="sm:mx-2 md:mx-0">
-      <Dialog open={isModalOpen} onOpenChange={closeModal}>
+      <Dialog open={isModalOpen} onOpenChange={closeModal} >
         <DialogTrigger asChild>
           <Button variant="outline">扫码添加本人微信</Button>
         </DialogTrigger>
-        <DialogContent className="sm:max-w-[425px]">
+        <DialogContent className="sm:max-w-[425px] md:max-w-[500px] lg:max-w-[600px]">
           <DialogHeader>
             <DialogTitle>扫码添加本人微信</DialogTitle>
             <DialogDescription>
@@ -34,6 +33,8 @@ export function ContactModal() {
           </DialogHeader>
           <div className="grid gap-4 py-4">
             <Image
+              width={260}
+              height={320}
               src="/_static/images/wechat.png"
               alt=""
               className="mx-auto"
@@ -46,6 +47,5 @@ export function ContactModal() {
           </DialogFooter>
         </DialogContent>
       </Dialog>
-    </div>
   );
 }

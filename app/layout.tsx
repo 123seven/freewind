@@ -12,7 +12,7 @@ import { fontHeading, fontSans, fontSatoshi } from "@/assets/fonts";
 
 export const metadata: Metadata = {
   title: "Free Wind ｜ 感受自由的风～",
-  description: "即使是一阵风，我也要享受它。",
+  description: "装备租赁平台 ｜ 即使是一阵风，也要享受它，",
 };
 
 export default function RootLayout({
