@@ -1,14 +1,14 @@
-"use client"
-import Image from "next/image"
-import { useModal } from "@/components/modals/providers"
+"use client";
+import Image from "next/image";
+import { useModal } from "@/components/modals/providers";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+} from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const campProducts = [
   {
@@ -76,7 +76,7 @@ const campProducts = [
     imageAlt: "骆驼黑胶天幕",
   },
   // More products...
-]
+];
 const photographyProducts = [
   {
     id: 101,
@@ -90,7 +90,7 @@ const photographyProducts = [
     id: 102,
     name: "神牛 ML100Bi常亮灯",
     href: "#",
-    price: "50¥/天",
+    price: "30¥/天",
     imageSrc: "/_static/images/102.jpg",
     imageAlt: "神牛 ML100Bi常亮灯",
   },
@@ -98,7 +98,7 @@ const photographyProducts = [
     id: 103,
     name: "神牛V1索尼版闪光灯",
     href: "#",
-    price: "60¥/天",
+    price: "35¥/天",
     imageSrc: "/_static/images/103.jpg",
     imageAlt: "神牛V1索尼版闪光灯",
   },
@@ -106,7 +106,7 @@ const photographyProducts = [
     id: 104,
     name: "神牛V860三代索尼版闪光灯",
     href: "#",
-    price: "40¥/天",
+    price: "20¥/天",
     imageSrc: "/_static/images/104.jpg",
     imageAlt: "神牛V860三代索尼版闪光灯",
   },
@@ -114,7 +114,7 @@ const photographyProducts = [
     id: 105,
     name: "神牛V850三代索尼版闪光灯",
     href: "#",
-    price: "35¥/天",
+    price: "15¥/天",
     imageSrc: "/_static/images/105.jpg",
     imageAlt: "神牛V850三代索尼版闪光灯",
   },
@@ -122,7 +122,7 @@ const photographyProducts = [
     id: 106,
     name: "神牛TT520闪光灯",
     href: "#",
-    price: "15¥/天",
+    price: "10¥/天",
     imageSrc: "/_static/images/106.jpg",
     imageAlt: "神牛TT520闪光灯",
   },
@@ -163,7 +163,7 @@ const photographyProducts = [
     id: 111,
     name: "腾龙28-75mm F/2.8 Di III VXD G2镜头",
     href: "#",
-    price: "100¥/天",
+    price: "80¥/天",
     imageSrc: "/_static/images/111.jpg",
     imageAlt: "腾龙28-75mm F/2.8 Di III VXD G2镜头",
   },
@@ -171,12 +171,20 @@ const photographyProducts = [
     id: 112,
     name: "唯卓仕85mm F1.8 STM镜头",
     href: "#",
-    price: "80¥/天",
+    price: "60¥/天",
     imageSrc: "/_static/images/112.jpg",
     imageAlt: "唯卓仕85mm F1.8 STM镜头",
   },
+  {
+    id: 113,
+    name: "神牛AD200pro II二代闪光灯",
+    href: "#",
+    price: "40¥/天",
+    imageSrc: "/_static/images/113.png",
+    imageAlt: "神牛AD200pro II二代闪光灯",
+  },
   // More products...
-]
+];
 const ridingProducts = [
   {
     id: 201,
@@ -185,12 +193,11 @@ const ridingProducts = [
     price: "30¥/天",
     imageSrc: "/_static/images/201.jpg",
     imageAlt: "GoPro 运动相机",
-  }
-]
-
+  },
+];
 
 export default function Example() {
-  const { openModal } = useModal()
+  const { openModal } = useModal();
 
   return (
     <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
@@ -280,5 +287,5 @@ export default function Example() {
         </TabsContent>
       </Tabs>
     </div>
-  )
+  );
 }
